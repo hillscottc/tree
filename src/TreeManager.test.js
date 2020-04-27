@@ -11,8 +11,15 @@ function getBigTree() {
   return tm
 }
 
+// silence the console.logs
+beforeEach(() => {
+  jest.spyOn(console, 'log').mockImplementation(() => {});
+});
+
 
 describe('_parseCmdStr', () => {
+
+
   test('fruits', () => {
     const tm = new TreeManager();
     const results = tm._parseCmdStr("fruits");
