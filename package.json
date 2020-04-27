@@ -1,0 +1,21 @@
+{
+  "name": "tree",
+  "version": "1.0.0",
+  "description": "simulate dir handling",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "babel src -d lib",
+    "start": "npm run build && node lib/index.js",
+    "test": "jest src"
+  },
+  "author": "scott hill",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^25.4.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5"
+  }
+}
